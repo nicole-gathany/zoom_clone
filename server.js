@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid')
 
 //Setting up express servers
 //ejs is the library we added earlier when downloading dependencies and how the views will be rendered
-app.set('view engine, ejs')
+app.set('view engine', 'ejs')
 //javascript and css will go into the public folder
 app.use(express.static('public'))
 
