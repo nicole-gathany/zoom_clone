@@ -26,4 +26,10 @@ app.get('/:room',  (req, res) => {
     res.render('room', {roomId: req.params.room})
 })
 
+io.compress('connection', socket =>{
+    socket.on('join-room', (roomId, user) => {
+        console.log(roomId, userId)
+    })
+})
+
 server.listen(3000)
