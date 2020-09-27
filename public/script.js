@@ -1,13 +1,15 @@
 const socket = io('/')
-const myPeer = new Peer(undefined, {
-    host: '/', 
-    port: '3001'
+// const myPeer = new Peer(undefined, {
+//     host: '/', 
+//     port: '3001'
 
-})
+// })
 
-myPeer.on('open', id => {
-    socket.emit('join-room', ROOM_ID, id)
-})
+//is making the app crash, but i also am not connected to the room, 
+//i think i may have to kill the peer server and restart it
+// myPeer.on('open', id => {
+//     socket.emit('join-room', ROOM_ID, id)
+// })
 
 
 
