@@ -2,4 +2,4 @@
 clone of zoom
 
 
-Uses Node.js, Express.js and React.js
+I developed a zoom clone using socket.io, Node.js, Express.js and React.js.
